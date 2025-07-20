@@ -19,13 +19,13 @@ fun main() {
     println("Not done tasks are: ")
     // for loop to display unfinished tasks
     for (item in list.filter { !it.isDone }) {
-        println("-${item.title}")
+        println("❌ ${item.title}")
     }
     println("===================================")
     // loop for finished tasks
     println("Done tasks are: ")
     for (item in list.filter { it.isDone }) {
-        println("-${item.title}")
+        println("✅ ${item.title}")
     }
 
 }
